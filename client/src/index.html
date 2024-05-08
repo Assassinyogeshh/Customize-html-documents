@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex justify-center items-center w-full h-[100vh] flex-col">
+        <span class="flex text-[2rem]">
+            <p>Webpage/</p>
+            <a href="./script.html">Dashboard</a>
+        </span>
+        <form class="border border-black flex flex-col justify-evenly p-[4rem] items-center w-[70%] h-[80%]"
+            onsubmit="submitForm(event)">
+            <span class="flex justify-center items-start flex-col w-[50%] gap-y-[.5rem]">
+                <label for="google_analysis" class="font-[600]">Google Analysis</label>
+                <input type="text" placeholder="Text" id="google_analysis"
+                    class="border border-black w-full outline-none p-1">
+            </span>
+            <span class="flex justify-center items-start flex-col w-[50%] gap-y-[.5rem]">
+                <label for="meta_pixel" class="font-[600]">Meta Pixel</label>
+                <input type="text" placeholder="Text" id="meta_pixel"
+                    class="border border-black w-full outline-none p-1">
+            </span>
+            <span class="flex justify-center items-start flex-col w-[50%] gap-y-[.5rem]">
+                <label for="microsoft_clarity" class="font-[600]">Microsoft Clarity</label>
+                <input type="text" placeholder="Text" id="microsoft_clarity"
+                    class="border border-black w-full outline-none p-1">
+            </span>
+
+            <button type="submit"
+                class="p-[.2rem] rounded-[0.2rem] w-[40%] bg-slate-500 mt-[4rem] border border-black flex justify-center items-center font-[400] cursor-pointer text-[1.2rem]">Submit</button>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
